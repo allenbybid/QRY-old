@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content"
+	android:background="@drawable/bg_1">
+
+	<RelativeLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:layout_margin="15dp">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:text="设置"
+			android:id="@+id/settingsTextView1"
+			android:textSize="39sp"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="31dp"
+			android:layout_marginBottom="10dp"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:text="下载器(下载缓存使用)"
+			android:layout_below="@id/settingsTextView1"
+			android:id="@+id/setdownc"/>
+
+		<Spinner
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_below="@id/setdownc"
+			android:id="@+id/setdown"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:text="播放器(播放影片使用)"
+			android:layout_below="@id/setdown"
+			android:id="@+id/setplayc"/>
+
+		<Spinner
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_below="@id/setplayc"
+			android:id="@+id/setplay"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="保存"
+			android:layout_below="@id/setplay"
+			android:id="@+id/setsub"
+			android:visibility="invisible"/>
+
+	</RelativeLayout>
+
+</RelativeLayout>
+

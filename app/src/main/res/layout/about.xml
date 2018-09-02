@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:background="@drawable/bg_1">
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="wrap_content"
+		android:text="关于"
+		android:textSize="47sp"
+		android:textColor="#634C4A"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/b_titl"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="match_parent"
+		android:text="A Low Of Nature."
+		android:layout_below="@id/b_titl"
+		android:id="@+id/b_sub"
+		android:textColor="#16B77B"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="match_parent"
+		android:text="本软件由SYH业余时间开发，因此在使用过程中难免产生BUG，欢迎反馈BUG。\n本应用宗旨:增进大家对于学术问题的深入了解和学习，本应用目前仅供前反你国际成员测试使用，其他人使用本应用所产生的法律、责任纠纷，概不负责。\n作者(宣)"
+		android:layout_below="@id/b_sub"
+		android:id="@+id/aboutTextView1"
+		android:textColor="#D2362C"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:text="AllenBy"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:textColor="#FFFFFF"/>
+
+</RelativeLayout>
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:background="@drawable/bg_1">
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="wrap_content"
+		android:text="AllenBy"
+		android:layout_centerInParent="true"
+		android:textSize="58sp"
+		android:textColor="#FF961F"
+		android:typeface="monospace"
+		android:id="@+id/mainTextView1"/>
+
+	<ProgressBar
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="58dp"
+		android:id="@+id/proccess3"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:id="@+id/ver1"
+		android:textColor="#FCFCFC"
+		android:layout_centerHorizontal="true"
+		android:layout_alignParentBottom="true"
+		android:textSize="12sp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:id="@+id/khide2"/>
+
+</RelativeLayout>
+

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:background="@drawable/bg_1">
+
+	<RelativeLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:id="@+id/historyRelativeLayout1">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:id="@+id/tips"
+			android:textColor="#FF550E"
+			android:typeface="monospace"
+			android:textSize="20sp"
+			android:layout_centerHorizontal="true"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:layout_alignParentRight="true"
+			android:textColor="#FDFF0B"
+			android:id="@+id/count"/>
+
+		<ListView
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:id="@+id/list"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:id="@+id/historyRelativeLayout2">
+
+		<Button
+			style="?android:attr/buttonStyleSmall"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="全部删除"
+			android:id="@+id/delall"
+			android:textColor="#FFFEFE"
+			android:onClick="icoas"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+			android:background="@android:color/transparent"/>
+
+		<Button
+			style="?android:attr/buttonStyleSmall"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="删除单个"
+			android:id="@+id/del1"
+			android:textColor="#FFFFFF"
+			android:onClick="icoas"
+			android:layout_alignParentBottom="true"
+			android:background="@android:color/transparent"/>
+
+		<Button
+			style="?android:attr/buttonStyleSmall"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="分享R链"
+			android:textColor="#FFFBFB"
+			android:id="@+id/sharerl"
+			android:onClick="icoas"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:background="@android:color/transparent"/>
+
+	</RelativeLayout>
+
+</RelativeLayout>
+

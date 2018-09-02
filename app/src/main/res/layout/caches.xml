@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/bg_1">
+
+	<Button
+		android:id="@+id/start"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_marginTop="20dp"
+		android:text="重新下载"
+		android:layout_alignParentTop="true"
+		android:background="#F6F99A"/>
+
+	<Button
+		android:id="@+id/cannel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_marginTop="20dp"
+		android:text="取消下载"
+		android:layout_alignParentTop="true"
+		android:background="#AED8E6"/>
+
+	<Button
+		android:id="@+id/openf"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:text="文件列表"
+		android:layout_alignParentTop="true"
+		android:background="#CEF999"
+		android:layout_centerHorizontal="true"/>
+
+	<TextView
+		android:id="@+id/progresstip"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/openf"
+		android:layout_marginTop="10dp"
+		android:textColor="#D13127"
+		android:typeface="serif"/>
+
+	<ProgressBar
+		android:id="@+id/progress"
+		style="@android:style/Widget.ProgressBar.Horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/progresstip"
+		android:layout_marginTop="9dip"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:text="AllenBy"
+		android:layout_centerHorizontal="true"
+		android:textColor="#FFFFFF"
+		android:typeface="serif"
+		android:layout_alignParentBottom="true"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="match_parent"
+		android:layout_below="@id/progress"
+		android:textColor="#461AC9"
+		android:textSize="16sp"
+		android:layout_marginTop="18dp"
+		android:typeface="sans"
+		android:id="@+id/downpath"/>
+
+</RelativeLayout>
+

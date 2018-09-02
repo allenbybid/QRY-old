@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content"
+	android:background="@drawable/bg_1">
+
+	<RelativeLayout
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		tools:context="bid.allenby.qry.meanc"
+		android:layout_margin="15dp">
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:ems="10"
+			android:layout_centerInParent="true"
+			android:id="@+id/uri"
+			android:text="http://m.youku.com/video/id_XMjcyODY2NDYwMA==.html?spm=a2hcm.20010061.m_213785.5~5!2~5~5~5!4~5~5~A"
+			android:lines="2"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="fill_parent"
+			android:text="爱奇艺或优酷地址(例如 http://m.iqiyi.com/v_19rrkjrex0.html):"
+			android:layout_above="@id/uri"
+			android:id="@+id/dztext"
+			android:textSize="13sp"/>
+
+		<Button
+			style="?android:attr/buttonStyleSmall"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:text="播放"
+			android:layout_centerHorizontal="true"
+			android:layout_below="@id/uri"
+			android:id="@+id/submit"
+			android:onClick="subnna"/>
+
+		<ProgressBar
+			style="?android:attr/progressBarStyleLarge"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:id="@+id/iuccess"
+			android:layout_centerInParent="true"
+			android:visibility="invisible"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:layout_above="@id/dztext"
+			android:maxWidth="126dp"
+			android:minHeight="84dp"
+			android:text="奇R艺"
+			android:textSize="76sp"
+			android:id="@+id/meancTextView2"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="AllenBy"
+			android:textColor="#FFFFFF"
+			android:layout_centerInParent="true"
+			android:textSize="36sp"
+			android:typeface="serif"
+			android:id="@+id/meancTextView1"
+			android:layout_alignParentBottom="true"/>
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:layout_below="@id/submit"
+			android:id="@+id/rlcon"
+			android:layout_marginTop="12dp"
+			android:lines="2"/>
+
+		<Button
+			style="?android:attr/buttonStyleSmall"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="R链"
+			android:layout_below="@id/rlcon"
+			android:id="@+id/rlsub"
+			android:onClick="subnna"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/khide"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:text="(爱奇艺，优酷版)"
+			android:layout_above="@id/dztext"
+			android:layout_alignParentRight="true"
+			android:textColor="#90B5DB"/>
+	<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="登录"
+			android:layout_below="@id/rlsub"
+			android:typeface="serif"
+			android:textSize="22sp"
+			android:id="@+id/login"
+			android:visibility="invisible"
+			android:onClick="subnna"/>
+	</RelativeLayout>
+
+</RelativeLayout>
+
